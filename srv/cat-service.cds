@@ -1,5 +1,7 @@
-using my.bookshop as my from '../db/data-model';
+using mike.officesupplies as officesupplies from '../db/schema';
 
 service CatalogService {
-    @readonly entity Books as projection on my.Books;
-}
+    @odata.draft.enabled :true
+    entity Products as projection on officesupplies.Products;
+    entity Suppliers as projection on officesupplies.Suppliers;
+};
