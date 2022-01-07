@@ -51,6 +51,27 @@ module.exports = cds.service.impl(function () {
                 break;
         }
     });
+
+    /** 
+    Raising and catching exceptions:
+    You will certainly add your implementations to your services. 
+    It is very likely, that you want to interrupt some operations before something crashes. 
+    In this case, you can throw a Node.js exception. for error handling.
+    Request response:
+    You can also use the req.error() method to collect messages or errors and return them to the caller in the request-response.
+    */
+    // this.on("submitOrder", async (req) => {
+    //     const { book, amount } = req.data;
+    //     let { stock } = await db.read(Books, book, (b) => b.stock);
+    //     if (stock >= amount) {
+    //         await db.update(Books, book).with({ stock: (stock -= amount) });
+    //         await this.emit("OrderedBook", { book, amount, buyer: req.user.id });
+    //         return req.reply({ stock }); // <-- Normal reply
+    //     } else {
+    //         // Reply with error code 409 and a custom error message
+    //         return req.error(409, `${amount} exceeds stock for book #${book}`);
+    //     }
+    // });
 })
 
 
