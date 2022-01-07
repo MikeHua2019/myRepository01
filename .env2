@@ -1,0 +1,1 @@
+VCAP_SERVICES={"hana":[{"name":"MK_OFFICE_SUPPLIES-db","instance_name":"MK_OFFICE_SUPPLIES-db","label":"hana","tags":["hana","database","relational","cap-resource-name:db","endpoint:https://api.cf.us10.hana.ondemand.com","org:7bec404atrial","space:dev"],"plan":"hdi-shared","credentials":{"service_key_name":"key"}}]}

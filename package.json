@@ -7,8 +7,11 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^5",
+    "@sap/hana-client": "^2.11.14",
     "express": "^4",
-    "hdb": "^0.18.3"
+    "hdb": "^0.18.3",
+    "@sap/hdbext": "^7.5.0",
+    "sap-hdbext-promisfied": "2.202112.1"
   },
   "devDependencies": {
     "@sap/hdi-deploy": "^4.2.3",
