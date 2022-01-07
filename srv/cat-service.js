@@ -30,6 +30,27 @@ module.exports = cds.service.impl(function () {
             return
         }
     })
+
+    /**
+     * Custom error handler
+     *
+     * throw a new error with: throw new Error('something bad happened');
+     *
+     **/
+    // eslint-disable-next-line no-unused-vars
+    this.on("error", (err, req) => {
+        switch (err.message) {
+            case "UNIQUE_CONSTRAINT_VIOLATION":
+                err.message = "The entry already exists.";
+                break;
+
+            default:
+                err.message =
+                    "An error occured. Please retry. Technical error message: " +
+                    err.message;
+                break;
+        }
+    });
 })
 
 
