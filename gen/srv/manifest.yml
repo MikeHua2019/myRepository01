@@ -1,0 +1,9 @@
+---
+applications:
+  - name: MK_OFFICE_SUPPLIES-srv
+    path: .
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - MK_OFFICE_SUPPLIES-db
