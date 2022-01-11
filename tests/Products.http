@@ -13,6 +13,7 @@ POST http://localhost:4004/catalog/Products
 Content-Type: application/json
 
 { 
-    "ID": "a9fe4b01-ccd3-4369-821c-291a7552dfab",
-    "identifier": "MK-CH-1001"
+    "identifier": "MK-CH-1002",
+    "title" : "Mike Test"
+
 }

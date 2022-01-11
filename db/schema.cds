@@ -27,6 +27,8 @@ entity Suppliers {
         postCode   : String;
         city       : String;
         country    : String;
-        products   : Composition of many Products
+        // products   : Composition of many Products
+        //                  on products.supplier = $self;        
+        products   : Association to many Products
                          on products.supplier = $self;
 }
