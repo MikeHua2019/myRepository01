@@ -18,7 +18,7 @@ annotate CatalogService.Products with @(
         {$Type: 'UI.ReferenceFacet', Target: '@UI.FieldGroup#ProductDetail', Label:'{i18n>Cat.HeaderFacetDetails}' },
         {$Type: 'UI.ReferenceFacet', Target: '@UI.FieldGroup#SupplierDetail', Label:'{i18n>Cat.HeaderFacetSupplier}' },
         {$Type: 'UI.ReferenceFacet', Target: '@UI.DataPoint#Price'}
-      ],            
+      ],      
       Facets: [
         {
           $Type: 'UI.CollectionFacet',
@@ -26,8 +26,14 @@ annotate CatalogService.Products with @(
           Facets: [
             {$Type: 'UI.ReferenceFacet', Target: '@UI.FieldGroup#Description', Label: '{i18n>Cat.FacetSectionDescription}'},
           ]
-        }
-      ],
+        },
+      ],          
+    //  Facets: [
+    //     {$Type: 'UI.ReferenceFacet', Target: '@UI.FieldGroup#Description', Label: '{i18n>Cat.FacetSectionDescription}'},
+    //     {$Type: 'UI.ReferenceFacet', Target: '@UI.FieldGroup#ProductDetail', Label: '{i18n>Cat.HeaderFacetDetails}'},
+    //     {$Type: 'UI.ReferenceFacet', Target: '@UI.FieldGroup#SupplierDetail', Label: '{i18n>Cat.HeaderFacetSupplier}'},
+    //     {$Type: 'UI.ReferenceFacet', Target: '@UI.DataPoint#Price'},
+    //   ],
       DataPoint#Price: {Value: price, Title: '{i18n>Cat.HeaderPrice}'},
       FieldGroup#Description: {
         Data:[
