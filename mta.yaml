@@ -6,7 +6,7 @@ parameters:
   enable-parallel-deployments: true
 build-parameters:
   before-all:
-    - builder: custom
+    - builder: custom 
       commands:
         - npm install --production
         - npx -p @sap/cds-dk cds build --production
