@@ -13,6 +13,7 @@ service CatalogService {
     //         to    : ['ProcurementManager']
     //     },
     // ]) as projection on officesupplies.Products;
+    
     entity Suppliers as projection on officesupplies.Suppliers;
     // entity Suppliers @(restrict : [
     //     {

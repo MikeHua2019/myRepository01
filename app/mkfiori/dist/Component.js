@@ -1,0 +1,1 @@
+sap.ui.define(["sap/fe/core/AppComponent"],function(e){"use strict";return e.extend("mike.officesupplies.mkfiori.Component",{metadata:{manifest:"json"}})});

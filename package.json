@@ -8,9 +8,12 @@
     "dependencies": {
         "@sap/cds": "^5",
         "@sap/hana-client": "^2.11.14",
+        "@sap/hdbext": "^7.5.0",
+        "@sap/xsenv": "^3.1.1",
+        "@sap/xssec": "^3.2.11",
         "express": "^4",
         "hdb": "^0.18.3",
-        "@sap/hdbext": "^7.5.0",
+        "passport": "^0.5.2",
         "sap-hdbext-promisfied": "2.202112.1"
     },
     "devDependencies": {
